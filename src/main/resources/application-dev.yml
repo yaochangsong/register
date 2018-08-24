@@ -1,0 +1,44 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
+    registry-fetch-interval-seconds: 5 # 更新本地缓存时间
+server:
+  port: 8080
+logging:
+  config: classpath:logback-develop.xml
+spring:
+  mqttRedis:
+    hostName: redis
+    port: 6379
+    timeout: 5000
+    database: 16
+  jdRedis:
+    hostName: ${spring.mqttRedis.hostName}
+    port: ${spring.mqttRedis.port}
+    timeout: ${spring.mqttRedis.timeout}
+    database: 26
+  datasource: # 数据库配置
+    url: jdbc:mysql://mysql:3306/mqtt?useUnicode=true&characterEncoding=utf-8
+    username: com
+    password: dftc123456
+rocketMQ:
+  nameService: rocketmq:9876
+  producer: reg_dev_producer
+  consumer: register_dev_consumer
+  mqtt:
+    topicName: reg_dev_topic
+    tagName: reg_tag
+  jd:
+    topicName: jd_dev_topic
+    tagName: reg_jd_tag
+adv:
+  jdRegister: https://mobile-test.jd.com/api/external/device/register.ajax
+  userName: dongfang_tiancheng
+  userToken: 5rgggd89od461
+  aiads:
+    appId: 100004
+    ivString: w1Cv3fWqIabw1vV#
+    businessCode: dongfangtianchengad_add
+    token: 5302ef3b-5bb4-4ac3-a002-a8a585ac1700
+    rsaPublicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqpi+P7HOD1BjaYbq5CqYzR/FHlTjw3pEAzaLzBWIlK2sg2XFtiRgHALPzENh+OZXKR+wvFl+nATRkgwU/lBct6v5HKvYAMqUXE7ReqWFvEDqA37ZPUTvQwBkvsLGFyXa1hMZ5OUK4A17pjDUi7Et5NO6jwpWwx7su9B0vUhFPHQIDAQAB

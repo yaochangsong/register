@@ -1,0 +1,52 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 15 # 服务过期时间，超过这个时间如果没有发送心跳，eureka服务将移除本服务
+    lease-renewal-interval-in-seconds: 5 # 发送心跳间隔时间
+spring:
+  profiles: #开发状态配置 [ dev:开发; test：测试; prod：正式发版; local：本地]
+    active: prod
+  application:
+    name: drs
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    pool:
+      max-active: 50
+      max-idle: 5
+      min-idle: 1
+      max-wait: 5000
+      testOnBorrow: true
+      testOnReturn: true
+      testWhileIdle: true
+#  rabbitmq:
+#    host: rabbitmq
+#    port: 5672
+#    username: zipkin
+#    password: 123456
+#  zipkin:
+#    rabbitmq:
+#      queue: sleuth.sleuth
+#  sleuth:
+#    sampler:
+#      percentage: 1.0

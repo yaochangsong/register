@@ -1,0 +1,198 @@
+{
+  "properties": [
+    {
+      "name": "spring.redis.pool.testOnBorrow",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.pool.testOnBorrow."
+    },
+    {
+      "name": "spring.redis.pool.testOnReturn",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.pool.testOnReturn."
+    },
+    {
+      "name": "spring.redis.pool.testWhileIdle",
+      "type": "java.lang.String",
+      "description": "Description for spring.redis.pool.testWhileIdle."
+    },
+    {
+      "name": "server.key.config",
+      "type": "java.lang.String",
+      "description": "Description for server.key.config."
+    },
+    {
+      "name": "rocketMQ.nameService",
+      "type": "java.lang.String",
+      "description": "Description for rocketMQ.nameService."
+    },
+    {
+      "name": "spring.datasource.initialSize",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.initialSize."
+    },
+    {
+      "name": "spring.datasource.minIdle",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.minIdle."
+    },
+    {
+      "name": "spring.datasource.maxActive",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.maxActive."
+    },
+    {
+      "name": "spring.datasource.maxWait",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.maxWait."
+    },
+    {
+      "name": "spring.datasource.timeBetweenEvictionRunsMillis",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.timeBetweenEvictionRunsMillis."
+    },
+    {
+      "name": "spring.datasource.minEvictableIdleTimeMillis",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.minEvictableIdleTimeMillis."
+    },
+    {
+      "name": "spring.datasource.validationQuery",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.validationQuery."
+    },
+    {
+      "name": "spring.datasource.testWhileIdle",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.testWhileIdle."
+    },
+    {
+      "name": "spring.datasource.testOnBorrow",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.testOnBorrow."
+    },
+    {
+      "name": "spring.datasource.testOnReturn",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.testOnReturn."
+    },
+    {
+      "name": "spring.datasource.poolPreparedStatements",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.poolPreparedStatements."
+    },
+    {
+      "name": "spring.datasource.maxPoolPreparedStatementPerConnectionSize",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.maxPoolPreparedStatementPerConnectionSize."
+    },
+    {
+      "name": "spring.datasource.filters",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.filters."
+    },
+    {
+      "name": "spring.datasource.connectionProperties",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.connectionProperties."
+    },
+    {
+      "name": "spring.zipkin.rabbitmq.queue",
+      "type": "java.lang.String",
+      "description": "Description for spring.zipkin.rabbitmq.queue."
+    },
+    {
+      "name": "adv.jdRegister",
+      "type": "java.lang.String",
+      "description": "Description for adv.jdRegister."
+    },
+    {
+      "name": "rocketMQ.mqtt.topicName",
+      "type": "java.lang.String",
+      "description": "Description for rocketMQ.mqtt.topicName."
+    },
+    {
+      "name": "rocketMQ.mqtt.mqttTag",
+      "type": "java.lang.String",
+      "description": "Description for rocketMQ.mqtt.mqttTag."
+    },
+    {
+      "name": "rocketMQ.jd.topicName",
+      "type": "java.lang.String",
+      "description": "Description for rocketMQ.jd.topicName."
+    },
+    {
+      "name": "rocketMQ.jd.jdTag",
+      "type": "java.lang.String",
+      "description": "Description for rocketMQ.jd.jdTag."
+    },
+    {
+      "name": "spring.mqttRedis.host",
+      "type": "java.lang.String",
+      "description": "Description for spring.mqttRedis.host."
+    },
+    {
+      "name": "spring.mqttRedis.port",
+      "type": "java.lang.String",
+      "description": "Description for spring.mqttRedis.port."
+    },
+    {
+      "name": "spring.mqttRedis.timeout",
+      "type": "java.lang.String",
+      "description": "Description for spring.mqttRedis.timeout."
+    },
+    {
+      "name": "spring.mqttRedis.database",
+      "type": "java.lang.String",
+      "description": "Description for spring.mqttRedis.database."
+    },
+    {
+      "name": "spring.jdRedis.hostName",
+      "type": "java.lang.String",
+      "description": "Description for spring.jdRedis.hostName."
+    },
+    {
+      "name": "spring.jdRedis.port",
+      "type": "java.lang.String",
+      "description": "Description for spring.jdRedis.port."
+    },
+    {
+      "name": "spring.jdRedis.timeout",
+      "type": "java.lang.String",
+      "description": "Description for spring.jdRedis.timeout."
+    },
+    {
+      "name": "spring.jdRedis.database",
+      "type": "java.lang.String",
+      "description": "Description for spring.jdRedis.database."
+    },
+    {
+      "name": "rocketMQ.producer",
+      "type": "java.lang.String",
+      "description": "Description for rocketMQ.producer."
+    },
+    {
+      "name": "rocketMQ.consumer",
+      "type": "java.lang.String",
+      "description": "Description for rocketMQ.consumer."
+    },
+    {
+      "name": "rocketMQ.mqtt.tagName",
+      "type": "java.lang.String",
+      "description": "Description for rocketMQ.mqtt.tagName."
+    },
+    {
+      "name": "rocketMQ.jd.tagName",
+      "type": "java.lang.String",
+      "description": "Description for rocketMQ.jd.tagName."
+    },
+    {
+      "name": "adv.userToken",
+      "type": "java.lang.String",
+      "description": "Description for adv.userToken."
+    },
+    {
+      "name": "adv.userName",
+      "type": "java.lang.String",
+      "description": "Description for adv.userName."
+    }
+  ] }
