@@ -1,4 +1,6 @@
 eureka:
+  instance:
+    ipAddress: eureka	
   client:
     service-url:
       defaultZone: http://eureka:8761/eureka/
